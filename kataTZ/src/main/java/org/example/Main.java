@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println(calc(input));
     }
-
+    // Метод калькулятор 
     public static String calc(String input) {
         int firstNumber;
         int lastNumber;
