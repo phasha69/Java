@@ -39,7 +39,8 @@ class RomanConverter {
 
     // Метод для конвертации из арабских чисел в римские
     public static String toRoman(int arabicNumeral) {
-        if (arabicNumeral<=0) throw new IllegalArgumentException("В римской системе счисления отсутствуют числа меньше 1.");
+        if (arabicNumeral <= 0)
+            throw new IllegalArgumentException("В римской системе счисления отсутствуют числа меньше 1.");
         StringBuilder result = new StringBuilder();
 
         // Проверяем каждое арабское число и добавляем соответствующую римскую цифру

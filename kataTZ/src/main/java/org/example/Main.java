@@ -40,7 +40,8 @@ public class Main {
             return toRoman(result);
         }
     }
-// Метод проверки на корректность ввода
+
+    // Метод проверки на корректность ввода
     public static void inputCorrect(String[] input) {
         if (input.length != 3)
             if (input.length == 1) throw new IllegalArgumentException("Строка не является математической операцией.");
@@ -50,6 +51,7 @@ public class Main {
         if (!Arrays.stream(ARITHMETICS).toList().contains(input[OPERATION_INDEX]))
             throw new IllegalArgumentException("Присутствует не существующая операция.");
     }
+
     // Метод расчета
     public static int calcArabic(int firstNumber, int lastNumber, String operation) {
         return switch (operation) {
